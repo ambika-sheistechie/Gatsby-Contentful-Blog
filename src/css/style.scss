@@ -1,0 +1,121 @@
+// @import "https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Red+Hat+Display:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"; 
+
+$Heading_font:'Inter', sans-serif;
+$body_font:'Open Sans', sans-serif;
+$TerraCotta:#E07A5F;
+$Eggshell:#FFFCEB;
+$Independence:#3D405B;
+$GreenSheen:#81B29A;
+$DeepChampagne:#F2CC8F;
+
+$section_container:1200px;
+$block_container:320px;
+$border_radius_fifteen:15px;
+
+@mixin row-flex-container{
+    display: flex;
+    flex-direction: row;
+}
+
+@mixin column-flex-container{
+    display: flex;
+    flex-direction: column;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: $body_font;
+    color: $Independence;
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-family: $Heading_font;
+}
+
+h1{
+    font-size: 36px;
+}
+
+h2{
+    font-size: 32px;
+}
+
+h3{
+    font-size: 28px;
+}
+
+h4{
+    font-size: 24px;
+    margin: 10px 0;
+}
+
+h5{
+    font-size: 18px;
+}
+
+h6{
+    font-size: 16px;
+}
+
+.fix-center{
+    max-width:$section_container;
+    width:100%;
+    padding: 0px 15px;
+    margin: 0 auto;
+}
+
+.home-landing-bg-img{
+    background-image: url("../images/landing image-sheistechie.png");
+}
+
+.inner-landing-bg-img{
+    background-image: url("../images/Inner page Landing banner.png");
+}
+
+img{
+    object-fit: cover;
+    width:100%;
+    max-width: 100%;
+}
+
+header{
+    margin: 15px 0;
+}
+
+nav{
+    @include row-flex-container;
+    justify-content: space-between;
+    align-items: center;
+    ul li{
+        list-style-type: none;
+        font-family: $body_font;
+        display: inline-block;
+        margin-left: 20px;
+        a{
+            text-decoration: none;
+        }
+    }
+}
+
+.brand-logo img {
+    width: 72px;
+}
+
+.blog-container{
+    @include row-flex-container();
+}
+
+.blog-card {
+    @include column-flex-container();
+    max-width:$block_container;
+    border-radius:$border_radius_fifteen;
+    margin: 10px 10px 20px 10px;
+}
+
+.blog-card img{
+    border-radius:$border_radius_fifteen;
+}
+
+

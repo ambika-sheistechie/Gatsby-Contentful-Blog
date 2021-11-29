@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-pages-blog-js",
+    "path": "/blog/",
+    "result": {"data":{"allContentfulBlog":{"edges":[{"node":{"blogTitle":"What is Headless CMS","featuredImage":{"file":{"url":"//images.ctfassets.net/dm7ryt6h5p1o/1cu17fbSrTw0waicMHTuNH/ad7567bc59873b2c9176fcf1bed09721/Landing_sectionimage.jpg"}}}},{"node":{"blogTitle":"Is React JS still in demand (2021)?","featuredImage":{"file":{"url":"//images.ctfassets.net/dm7ryt6h5p1o/2fL9X2kknVt1SOTKRkyUGx/a56f426d4f8294acbc470fda323b7d36/Landing_sectionimage.jpg"}}}}]}},"pageContext":{}},
+    "staticQueryHashes": []}
